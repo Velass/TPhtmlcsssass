@@ -1,0 +1,148 @@
+header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  box-shadow: 0 2px 0 0 rgba(7, 31, 50, 0.1);
+}
+header img {
+  margin-top: 10px;
+  width: 9%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-left: 20px;
+}
+header nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+header nav a h2 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  height: 50px;
+  margin: 5px 0 0 0;
+}
+header nav a:hover {
+  border-top: 3px solid #000000;
+}
+header nav a:visited {
+  color: #000000;
+}
+header #recherche {
+  margin-left: 30px;
+  width: 150px;
+  height: 40px;
+  background-color: #f4f3f3;
+}
+header #recherche a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-decoration: none;
+}
+header #recherche a i {
+  height: auto;
+  margin: auto;
+}
+header #recherche a p {
+  margin: auto 20px auto 0px;
+  font-weight: bolder;
+}
+header #recherche a:visited {
+  color: #000000;
+}
+header #monParis {
+  display: flex;
+  width: 9%;
+  height: 73px;
+  position: absolute;
+  right: 30px;
+  justify-content: center;
+  align-items: center;
+}
+header #monParis a {
+  text-decoration: none;
+  color: #354BCF;
+  font-style: normal;
+}
+header #monParis a p {
+  color: #354BCF;
+  font-size: 21px;
+  font-weight: bolder;
+}
+header #monParis i {
+  margin-left: 10px;
+  color: #354BCF;
+}
+header #monParis:hover {
+  border-top: 6px solid;
+  color: #354BCF;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+main #acces {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 500px;
+}
+main #acces h2 {
+  align-self: center;
+}
+main #acces nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f3f3;
+  margin: auto auto 7px auto;
+  width: auto;
+  flex-wrap: nowrap;
+  text-decoration: none;
+}
+main #acces nav a h3 {
+  font-size: x-small;
+  margin-left: 20px;
+}
+main #acces nav a i {
+  color: #354BCF;
+}
+main #acces nav a:visited {
+  color: #000000;
+}
+main #acces nav #rapid1 {
+  width: 35%;
+}
+main #acces nav #rapid2 {
+  width: 60%;
+}
+main #acces nav #rapid3 {
+  width: 70%;
+}
+main #acces nav #rapid4 {
+  width: 45%;
+}
+main #acces nav p {
+  color: red;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+main article {
+  width: 40%;
+  background-color: #000000;
+}
+main aside {
+  width: 20%;
+  background-color: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */
