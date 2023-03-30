@@ -1,3 +1,7 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -6,12 +10,12 @@ header {
 }
 header img {
   margin-top: 10px;
-  width: 9%;
+  width: 180px;
 }
 header nav {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 700px;
   margin-left: 20px;
 }
 header nav a {
@@ -23,7 +27,7 @@ header nav a {
 header nav a h2 {
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 19px;
   height: 50px;
   margin: 5px 0 0 0;
 }
@@ -55,7 +59,16 @@ header #recherche a p {
   font-weight: bolder;
 }
 header #recherche a:visited {
-  color: #000000;
+  color: #071F32;
+}
+header #recherche:hover {
+  background: #071f32;
+}
+header #recherche:hover i {
+  color: white;
+}
+header #recherche:hover p {
+  color: white;
 }
 header #monParis {
   display: flex;
@@ -68,13 +81,12 @@ header #monParis {
 }
 header #monParis a {
   text-decoration: none;
-  color: #354BCF;
   font-style: normal;
 }
 header #monParis a p {
   color: #354BCF;
   font-size: 21px;
-  font-weight: bolder;
+  white-space: nowrap;
 }
 header #monParis i {
   margin-left: 10px;
@@ -89,16 +101,16 @@ main {
   display: flex;
   justify-content: space-between;
 }
-main #acces {
+main #left {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 19%;
   height: 500px;
 }
-main #acces h2 {
+main #left h2 {
   align-self: center;
 }
-main #acces nav a {
+main #left nav a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,41 +120,146 @@ main #acces nav a {
   flex-wrap: nowrap;
   text-decoration: none;
 }
-main #acces nav a h3 {
+main #left nav a h3 {
   font-size: x-small;
   margin-left: 20px;
 }
-main #acces nav a i {
+main #left nav a i {
   color: #354BCF;
 }
-main #acces nav a:visited {
+main #left nav a:hover i {
+  filter: brightness(1.75);
+}
+main #left nav a:visited {
   color: #000000;
 }
-main #acces nav #rapid1 {
-  width: 35%;
+main #left nav #rapid1 {
+  width: 100px;
 }
-main #acces nav #rapid2 {
-  width: 60%;
+main #left nav #rapid2 {
+  width: 170px;
 }
-main #acces nav #rapid3 {
-  width: 70%;
+main #left nav #rapid3 {
+  width: 200PX;
 }
-main #acces nav #rapid4 {
-  width: 45%;
+main #left nav #rapid4 {
+  width: 150px;
 }
-main #acces nav p {
-  color: red;
+main #left nav #voirLaCarte {
+  background-color: white;
+  width: 100px;
+  height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main #left nav #voirLaCarte p {
+  color: #e20000;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
-main article {
-  width: 40%;
-  background-color: #000000;
+main #left #cart {
+  align-self: center;
 }
-main aside {
-  width: 20%;
-  background-color: #000000;
+main #left #cart a {
+  background-color: white;
+}
+main #left #cart a .incart {
+  display: flex;
+  border-top: 1px solid #000000;
+  width: 230px;
+  height: 80px;
+}
+main #left #cart a .incart img {
+  align-self: center;
+  font-size: medium;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  width: 35px;
+  padding: 10px;
+}
+main #left #cart a .incart p {
+  font-size: large;
+  margin-left: 10px;
+  color: #071f32b5;
+  align-items: center;
+}
+main #left #cart a:hover img {
+  filter: invert(1);
+}
+main #left #cart a:active {
+  color: #000000;
+}
+main #middle {
+  width: 45%;
+}
+main #middle article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main #middle article img {
+  max-width: 100%;
+}
+main #middle article #note {
+  display: flex;
+  position: relative;
+  background-color: white;
+  width: 80%;
+  height: 400px;
+  justify-content: center;
+  margin: -60px auto auto auto;
+}
+main #middle article #note span {
+  position: absolute;
+  left: 30px;
+  top: -10px;
+  background-color: #e20000;
+  width: 15%;
+  height: 10%;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+main #right {
+  width: 23%;
+}
+main #right article {
+  display: flex;
+  flex-direction: row-reverse;
+}
+main #right article .contenu {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  box-shadow: 0 2px 0 0 rgba(7, 31, 50, 0.1);
+}
+main #right article .contenu a {
+  text-decoration: none;
+  width: 90px;
+  margin: 0px;
+}
+main #right article .contenu a p {
+  color: #e20000;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+main #right article .contenu img {
+  width: 90%;
+  height: 100%;
+  margin-left: 10px;
+}
+main #right article .contenu p {
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+main #right article .date p:nth-child(1) {
+  margin-top: 15px;
+}
+main #right article .date p {
+  margin: 0px 15px 0px 0px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
