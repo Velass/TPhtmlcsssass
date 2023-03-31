@@ -270,37 +270,106 @@ main {
 
     #middle {
         width: 45%;
-        article{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            img{
-                max-width: 100%;
 
-            }
-            #note{
+        article {
+            a {
+                text-decoration: none;
+                color: #071f32;
+
+
                 display: flex;
-                position: relative;
-                background-color: white;
-                width: 80%;
-                height: 400px;
-                justify-content: center;
-                margin: -60px auto auto auto;
-                span{
-                    position: absolute;
-                    left: 30px;
-                    top: -10px;
-                    background-color: #e20000;
-                    width: 15%;
-                    height: 10%;
-                    margin: auto;
-                    color: white;
-                    text-align: center;
+                flex-direction: column;
+                width: 100%;
+
+                img {
+                    width: 95%;
 
                 }
 
+                #note {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    background-color: white;
+                    width: 80%;
+                    justify-content: center;
+                    margin: -60px auto auto auto;
+
+                    span {
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        left: 30px;
+                        top: -17px;
+                        background-color: #e20000;
+                        width: 70px;
+                        height: 30px;
+                        margin: auto;
+                        color: white;
+                        font-size: small;
+
+
+                    }
+
+                    h2 {
+                        font-size: 40px;
+                        margin: 20px 0px 0px 30px;
+                    }
+
+                    p {
+                        width: 80%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 20px auto auto auto;
+                    }
+                }
             }
 
+            a:visited {
+                color: #071f32;
+            }
+        }
+
+        #articleBottom {
+            width: 100%;
+            display: flex;
+
+
+            article {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+
+                img {
+                    width: 70%;
+                }
+
+                .noteBottom {
+                    span {
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        background-color: #354BCF;
+                        width: 80px;
+                        height: 30px;
+                        margin: -20px 0px 0px 30px;
+
+                        color: white;
+                        font-size: small;
+
+
+                    }
+
+                    h3 {
+                        width: 60%;
+                    }
+                }
+            }
         }
     }
 
@@ -353,6 +422,36 @@ main {
                     font-weight: bold;
                 }
             }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+
+    #footerLeft {
+        height: 400px;
+        background-color: #FBFBFB;
+        width: 100%;
+
+        #mairie {
+            display: flex;
+            align-items: center;
+            
+
+            img {
+                position: relative;
+                
+            }
+        }
+
+        #bloc {
+            display: flex;
+        }
+
+        nav {
+            display: flex;
         }
     }
 }

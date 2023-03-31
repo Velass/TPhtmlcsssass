@@ -192,33 +192,79 @@ main #left #cart a:active {
 main #middle {
   width: 45%;
 }
-main #middle article {
+main #middle article a {
+  text-decoration: none;
+  color: #071f32;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-main #middle article img {
-  max-width: 100%;
+main #middle article a img {
+  width: 95%;
 }
-main #middle article #note {
+main #middle article a #note {
   display: flex;
+  flex-direction: column;
   position: relative;
   background-color: white;
   width: 80%;
-  height: 400px;
   justify-content: center;
   margin: -60px auto auto auto;
 }
-main #middle article #note span {
+main #middle article a #note span {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   left: 30px;
-  top: -10px;
+  top: -17px;
   background-color: #e20000;
-  width: 15%;
-  height: 10%;
+  width: 70px;
+  height: 30px;
   margin: auto;
   color: white;
-  text-align: center;
+  font-size: small;
+}
+main #middle article a #note h2 {
+  font-size: 40px;
+  margin: 20px 0px 0px 30px;
+}
+main #middle article a #note p {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto auto auto;
+}
+main #middle article a:visited {
+  color: #071f32;
+}
+main #middle #articleBottom {
+  width: 100%;
+  display: flex;
+}
+main #middle #articleBottom article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+main #middle #articleBottom article img {
+  width: 70%;
+}
+main #middle #articleBottom article .noteBottom span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #354BCF;
+  width: 80px;
+  height: 30px;
+  margin: -20px 0px 0px 30px;
+  color: white;
+  font-size: small;
+}
+main #middle #articleBottom article .noteBottom h3 {
+  width: 60%;
 }
 main #right {
   width: 23%;
@@ -260,6 +306,29 @@ main #right article .date p {
   margin: 0px 15px 0px 0px;
   font-size: 22px;
   font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+}
+footer #footerLeft {
+  height: 400px;
+  background-color: #FBFBFB;
+  width: 100%;
+}
+footer #footerLeft #mairie {
+  display: flex;
+  align-items: center;
+}
+footer #footerLeft #mairie img {
+  position: relative;
+}
+footer #footerLeft #bloc {
+  display: flex;
+}
+footer #footerLeft nav {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
