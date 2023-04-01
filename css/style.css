@@ -313,22 +313,110 @@ footer {
   flex-direction: row;
 }
 footer #footerLeft {
-  height: 400px;
+  height: 300px;
   background-color: #FBFBFB;
-  width: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 footer #footerLeft #mairie {
+  margin-top: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 footer #footerLeft #mairie img {
   position: relative;
+  width: 160px;
+}
+footer #footerLeft #mairie p {
+  margin-left: 15px;
+  background-color: #F2F2F2;
+  padding: 10px 100px 10px 10px;
+  font-weight: bold;
+  font-size: small;
 }
 footer #footerLeft #bloc {
   display: flex;
+  justify-content: space-around;
+}
+footer #footerLeft #bloc .blocFooter {
+  font-size: small;
+}
+footer #footerLeft #bloc .blocFooter a {
+  text-decoration: none;
+}
+footer #footerLeft #bloc .blocFooter a p {
+  color: #e20000;
+  display: flex;
+  font-size: x-small;
+  font-weight: bold;
 }
 footer #footerLeft nav {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer #footerLeft nav a {
+  text-decoration: none;
+  color: #071f32;
+}
+footer #footerLeft nav a p {
+  color: #071f32;
+  font-size: x-small;
+  font-weight: bold;
+  margin-left: 20px;
+}
+footer #footerRight {
+  color: white;
+  background-color: #071F32;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer #footerRight p {
+  font-size: small;
+}
+footer #footerRight div input {
+  width: 250px;
+  height: 40px;
+  margin-right: 10px;
+}
+footer #footerRight div button {
+  color: white;
+  background-color: #E22C3F;
+  border-style: none;
+  width: 105px;
+}
+footer #footerRight #reseaux {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+footer #footerRight #reseaux a {
+  text-decoration: none;
+  color: white;
+}
+footer #footerRight #reseaux a:hover {
+  color: #e20000;
+}
+footer #footerRight #note {
+  margin-top: 40px;
+  display: flex;
+  height: 70px;
+  flex-direction: column;
+}
+footer #footerRight #note p {
+  margin: 0;
+}
+footer #footerRight #note span p {
+  color: #e20000;
+  font-size: large;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

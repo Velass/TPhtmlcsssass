@@ -431,27 +431,140 @@ footer {
     flex-direction: row;
 
     #footerLeft {
-        height: 400px;
+        height: 300px;
         background-color: #FBFBFB;
-        width: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         #mairie {
+            margin-top: 30px;
             display: flex;
             align-items: center;
-            
+            justify-content: center;
+
 
             img {
                 position: relative;
-                
+                width: 160px;
+
             }
+
+            p {
+                margin-left: 15px;
+                background-color: #F2F2F2;
+                padding: 10px 100px 10px 10px;
+                font-weight: bold;
+                font-size: small;
+            }
+
         }
 
         #bloc {
             display: flex;
+            justify-content: space-around;
+
+            .blocFooter {
+
+                font-size: small;
+
+                a {
+                    text-decoration: none;
+
+                    p {
+                        color: #e20000;
+                        display: flex;
+                        font-size: x-small;
+                        font-weight: bold;
+                    }
+                }
+            }
         }
+
+
 
         nav {
             display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+                color: #071f32;
+
+
+                p {
+                    color: #071f32;
+                    font-size: x-small;
+                    font-weight: bold;
+                    margin-left: 20px;
+                }
+            }
         }
+    }
+
+    #footerRight {
+        color: white;
+        background-color: #071F32;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: small;
+        }
+
+        div {
+            input {
+                width: 250px;
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            button {
+                color: white;
+                background-color: #E22C3F;
+                border-style: none;
+                width: 105px;
+            }
+        }
+
+        #reseaux {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover {
+                color: #e20000;
+            }
+
+
+        }
+        #note {
+            margin-top: 40px;
+            display: flex;
+            height: 70px;
+            flex-direction: column;
+            p {
+                margin: 0;
+            }
+            span{
+                p{
+                    color: #e20000;
+                    font-size: large;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+
     }
 }
