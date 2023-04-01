@@ -503,6 +503,10 @@ body footer #footerRight #note span p {
     width: 100%;
     display: flex;
   }
+  body main #right article .contenu img {
+    width: 70%;
+    align-self: center;
+  }
   body footer #footerLeft nav a p {
     font-size: xx-small;
   }
